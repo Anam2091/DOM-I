@@ -40,3 +40,78 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+const firstnew = document.querySelectorAll('nav a')
+ firstnew.forEach((element,i) => {
+  element.textContent = siteContent.nav['nav-item-' + (i + 1)]
+  element.style.color = 'green'
+  })
+  const newvar = document.createElement('h1')
+  document.body.appendChild(newvar)
+  newvar.textContent= 'APPEND CHILD ADD ON'
+
+  const secondvar = document.createElement('h1')
+  document.body.prepend(secondvar)
+  secondvar.textContent = 'PREPEND CHILD ADD ON'
+
+const newimg = document.querySelector ('.logo')
+newimg.src = siteContent.nav["img-src"]
+console.log(newimg)
+
+const Domawe = document.querySelector ('.cta-text h1')
+Domawe.textContent = siteContent.cta.h1
+
+const buttony = document.querySelector('.cta-text button')
+buttony.textContent = siteContent.cta.button
+
+const imgy = document.querySelector('#cta-img')
+imgy.src = siteContent.cta['img-src']
+
+const firstone = document.querySelector('.text-content h4')
+firstone.textContent = siteContent["main-content"]["features-h4"]
+
+const firstonetwo = document.querySelector('.text-content p')
+firstonetwo.textContent = siteContent["main-content"]["features-content"]
+
+const secondh = document.querySelector('.text-content:nth-child(2) h4')
+secondh.textContent=siteContent['main-content']["about-h4"]
+
+const third = document.querySelector('.text-content:nth-child(2) p')
+third.textContent=siteContent["main-content"]['about-content']
+
+const nextimg = document.querySelector('#middle-img')
+nextimg.src = siteContent["main-content"]["middle-img-src"]
+
+const fourth = document.querySelector('.text-content:nth-child(3) h4')
+fourth.textContent=siteContent["main-content"]['services-h4']
+
+const fourthone = document.querySelector('.text-content:nth-child(3) p')
+fourthone.textContent=siteContent["main-content"]["services-content"]
+
+const fifthone = document.querySelector('.bottom-content .text-content h4')
+fifthone.textContent=siteContent["main-content"]["product-h4"]
+
+const fifthtwo = document.querySelector('.bottom-content .text-content p')
+fifthtwo.textContent=siteContent["main-content"]["product-content"]
+
+const six = document.querySelector('.bottom-content .text-content:nth-child(2) h4')
+six.textContent=siteContent["main-content"]["vision-h4"]
+
+const sixtw = document.querySelector('.bottom-content .text-content:nth-child(2) p')
+sixtw.textContent=siteContent["main-content"]["vision-content"]
+
+const contact = document.querySelector('.contact h4')
+contact.textContent=siteContent["contact"]["contact-h4"]
+
+const add = document.querySelector('.contact p')
+add.textContent=siteContent["contact"]["address"]
+
+const num = document.querySelector('.contact p:nth-child(3)')
+num.textContent=siteContent["contact"]["phone"]
+
+const email = document.querySelector('.contact p:nth-child(4)')
+email.textContent=siteContent["contact"]["email"]
+
+const foot = document.querySelector('footer p')
+foot.textContent=siteContent["footer"]["copyright"]
